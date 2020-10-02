@@ -1,10 +1,7 @@
-package Week5;
-
-import javax.crypto.Cipher;
 
 public class Circle {
-    protected double radius = 1.0;
-    protected String color = "red";
+    private double radius = 1.0;
+    private String color = "red";
     protected static final double PI = 3.14;
 
     public Circle() {

@@ -1,10 +1,12 @@
-package Week5;
 
-import java.util.concurrent.CyclicBarrier;
 
 public class Cylinder extends Circle{
-    double height = 1.0;
+    private double height = 1.0;
     public Cylinder() {
+    }
+
+    public Cylinder(double radius) {
+        super(radius);
     }
 
     public Cylinder(double height, double radius) {
