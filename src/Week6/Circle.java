@@ -1,4 +1,3 @@
-package Week6;
 
 
 public  class Circle extends Shape {
@@ -37,7 +36,7 @@ public  class Circle extends Shape {
     public String toString() {
         return "Circle["
                 + "radius=" + this.radius
-                + ", color=" + getColor()
-                + ", filled=" + isFilled() + ']';
+                + ",color=" + getColor()
+                + ",filled=" + isFilled() + ']';
     }
 }

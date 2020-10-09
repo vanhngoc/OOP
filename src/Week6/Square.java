@@ -1,4 +1,4 @@
-package Week6;
+
 
 public class Square extends Rectangle{
     public Square() {}
@@ -18,32 +18,22 @@ public class Square extends Rectangle{
     }
 
     public double getSide() {
-        return super.width;
+        return super.getWidth();
     }
     @Override
     public void setWidth(double side) {
-        super.width = side;
-        super.length = side;
+        super.setWidth(side);
+        super.setLength(side);
     }
     @Override
     public void setLength(double side) {
-        super.length = side;
-        super.width = side;
+        super.setLength(side);
+        super.setWidth(side);
     }
-    @Override
-    public double getArea() {
-        return width * width;
-    }
-
-    @Override
-    public double getPerimeter() {
-        return width * 4;
-    }
-
     @Override
     public String toString() {
         return "Square[" + "side=" + this.getSide()
-                + ", color=" + super.getColor()
-                + ", filled=" + super.isFilled() + "]";
+                + ",color=" + super.getColor()
+                + ",filled=" + super.isFilled() + "]";
     }
 }

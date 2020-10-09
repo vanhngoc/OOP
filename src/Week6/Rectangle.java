@@ -1,4 +1,4 @@
-package Week6;
+
 
 public class Rectangle extends Shape{
     protected double width;
@@ -34,20 +34,20 @@ public class Rectangle extends Shape{
 
     @Override
     public double getArea() {
-        return length * width;
+        return this.length * this.width;
     }
 
     @Override
     public double getPerimeter() {
-        return (length + width) * 2;
+        return (this.length + this.width) * 2;
     }
 
     @Override
     public String toString() {
         return "Rectangle["
                 + "width=" + this.width
-                + ", length=" + this.length
-                + ", color=" + super.getColor()
-                + ", filled=" + super.isFilled() + ']';
+                + ",length=" + this.length
+                + ",color=" + super.getColor()
+                + ",filled=" + super.isFilled() + ']';
     }
 }
